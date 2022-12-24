@@ -16,18 +16,18 @@ const Navbar = () => {
       <div className="row text-center">
         <div className="col-lg-3 col-sm-12">
           <Link to="/" className="text-decoration-none">
-            <div className="display-5 text-danger text-start mx-4"> MBA</div>
+            <div className="display-5 text-danger text-start mx-5"> MBA</div>
           </Link>
         </div>
         <div className="col-lg-7 col-sm-8 py-2 ">
           <Form className="d-flex ">
             <Form.Control
               type="search"
-              placeholder="Search"
-              className="me-2 w-75 "
-              aria-label="Search"
+              placeholder="Search a Movie"
+              className=" me-2 w-75 "
+              aria-label="Search"        
             />
-            <Button variant="outline-success">Search</Button>
+            <Button variant="outline-danger">Search</Button>
           </Form>
         </div>
         <div className="col-lg-2 col-sm-4 p-2">
