@@ -1,3 +1,4 @@
+import React from "react";
 import { CCarousel, CCarouselItem, CImage } from "@coreui/react";
 import Image1 from "../../assets/1.avif";
 import Image2 from "../../assets/2.avif";

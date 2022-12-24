@@ -1,7 +1,8 @@
+
 import { axiosInstance } from "../../utils/AxiosInstance";
 
 export const signIn = async (user) => {
-  const URL = "/mba/api/v1/auth/signIn";
+  const URL = "mba/api/v1/auth/signin";
 
   try {
     const response = await axiosInstance.post(URL, user);
@@ -14,7 +15,7 @@ export const signIn = async (user) => {
 };
 
 export const signUp = async (user) => {
-  const URL = "/mba/api/v1/auth/signup";
+  const URL = "mba/api/v1/auth/signup";
 
   try {
     const response = await axiosInstance.post(URL, user);
@@ -31,4 +32,4 @@ export const signOut = () => {
   localStorage.remoteItem("userId");
   localStorage.remoteItem("accessToken");
   localStorage.remoteItem("userStatus");
-}
+};

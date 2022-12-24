@@ -1,3 +1,4 @@
+
 import { axiosInstance } from "../../utils/AxiosInstance";
 
 export const getAllMovies = async () => {
@@ -5,10 +6,8 @@ export const getAllMovies = async () => {
 
   try {
     const response = await axiosInstance.post(URL);
-       return response;
+    return response;
   } catch (error) {
-        return error.response;
+    return error.response;
   }
 };
-
-
